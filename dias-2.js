@@ -22,16 +22,25 @@
 
 // Observa que cada información entre [ ] es una de las respuestas dadas por la persona.
 
+// Pedimos al usuario que ingrese su información
 let nombre = prompt("¿Cuál es tu nombre?");
 let edad = prompt("¿Cuántos años tienes?");
 let lenguaje = prompt("¿Qué lenguaje de programación estás estudiando?");
 
-document.write(`Hola <strong>${nombre}</strong>, tienes <strong>${edad}</strong> años y ya estás aprendiendo <strong>${lenguaje}</strong>!`);
+
+document.write(`Hola <strong>${nombre}</strong>, tienes <strong>${edad}</strong> años y ya estás aprendiendo <strong>${lenguaje}</strong>! <br>`);
 
 
-let gustaLenguaje = prompt(`¿Te gusta estudiar ${lenguaje}? (Responde con sí o no)`);
-if (gustaLenguaje.toLowerCase() === "sí" || gustaLenguaje.toLowerCase() === "si") {
-    document.write("<br>¡Qué bueno! Sigue aprendiendo y tendrás mucho éxito.");
+let gustaLenguaje = prompt(`¿Te gusta estudiar ${lenguaje}? Responde con el número 1 para SÍ o 2 para NO.`);
+
+
+gustaLenguaje = parseInt(gustaLenguaje);
+
+
+if (gustaLenguaje === 1) {
+    document.write("¡Muy bien! Sigue estudiando y tendrás mucho éxito. 🚀");
+} else if (gustaLenguaje === 2) {
+    document.write("Oh, qué pena... ¿Ya intentaste aprender otros lenguajes? 🤔");
 } else {
-    document.write("<br>¡Vaya! Quizás puedas probar con otro lenguaje.");
+    document.write("No ingresaste una opción válida. Inténtalo de nuevo. ❌");
 }
