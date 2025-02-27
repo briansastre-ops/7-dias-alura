@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Camino en Programación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-screen" class="screen active">
+            <h1>¡Bienvenido a Tu Camino en Programación!</h1>
+            <p>Descubre tu ruta ideal en el mundo del desarrollo de software</p>
+            <button id="start-btn" class="btn primary-btn">Comenzar Aventura</button>
+        </div>
+
+        <div id="area-selection" class="screen">
+            <h2>¿Qué área te interesa más?</h2>
+            <div class="options">
+                <button id="frontend-btn" class="btn option-btn">Front-End</button>
+                <button id="backend-btn" class="btn option-btn">Back-End</button>
+            </div>
+        </div>
+
+        <div id="frontend-tech" class="screen">
+            <h2>¿Qué tecnología de Front-End prefieres?</h2>
+            <div class="options">
+                <button id="react-btn" class="btn option-btn">React</button>
+                <button id="vue-btn" class="btn option-btn">Vue</button>
+            </div>
+        </div>
+
+        <div id="backend-tech" class="screen">
+            <h2>¿Qué tecnología de Back-End prefieres?</h2>
+            <div class="options">
+                <button id="csharp-btn" class="btn option-btn">C#</button>
+                <button id="java-btn" class="btn option-btn">Java</button>
+            </div>
+        </div>
+
+        <div id="specialization" class="screen">
+            <h2>¿Cuál es tu objetivo?</h2>
+            <div class="options">
+                <button id="specialize-btn" class="btn option-btn">Especializarme</button>
+                <button id="fullstack-btn" class="btn option-btn">Convertirme en Fullstack</button>
+            </div>
+        </div>
+
+        <div id="more-tech" class="screen">
+            <h2>¿Hay alguna otra tecnología que te gustaría aprender?</h2>
+            <input type="text" id="new-tech" class="input-field" placeholder="Escribe una tecnología...">
+            <button id="add-tech-btn" class="btn primary-btn">Agregar</button>
+            <div id="tech-list" class="tech-list"></div>
+            <button id="finish-btn" class="btn secondary-btn">Finalizar</button>
+        </div>
+
+        <div id="result" class="screen">
+            <h2>Tu Camino en Programación</h2>
+            <div id="result-content"></div>
+            <button id="restart-btn" class="btn primary-btn">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
