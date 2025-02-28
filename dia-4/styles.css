@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .instructions {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .game-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  #restart-button {
+    background-color: #2ecc71;
+    margin-top: 1rem;
+  }
+  
+  #restart-button:hover {
+    background-color: #27ae60;
+  }
+  
+  .feedback-area {
+    margin: 1rem 0;
+  }
+  
+  #attempts {
+    color: #7f8c8d;
+    font-weight: 600;
+  }
+  
+  #attempts span {
+    color: #e74c3c;
+  }
+  
+  #message {
+    margin-top: 0.5rem;
+    min-height: 24px;
+  }
+  
+  .success {
+    color: #2ecc71;
+    font-weight: 600;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }
+  
+  .info {
+    color: #3498db;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .result-area {
+    margin-top: 1rem;
+  }
+  
+  #result {
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-height: 30px;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .input-area {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  
