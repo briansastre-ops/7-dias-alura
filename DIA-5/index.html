@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Compras</h1>
+            <p>Organiza tus compras por categorías</p>
+        </header>
+
+        <div class="form-container">
+            <div class="input-group">
+                <label for="alimento">Alimento:</label>
+                <input type="text" id="alimento" placeholder="¿Qué alimento deseas agregar?">
+            </div>
+            
+            <div class="input-group">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria">
+                    <option value="">Selecciona una categoría</option>
+                    <option value="frutas">Frutas</option>
+                    <option value="verduras">Verduras</option>
+                    <option value="lácteos">Lácteos</option>
+                    <option value="carnes">Carnes</option>
+                    <option value="congelados">Congelados</option>
+                    <option value="dulces">Dulces</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            
+            <button id="agregar" class="btn-agregar">Agregar a la lista</button>
+        </div>
+
+        <div class="lista-container">
+            <h2>Tu lista de compras:</h2>
+            <div id="lista-compras" class="lista-compras">
+                <!-- Aquí se mostrarán los items agrupados por categoría -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
